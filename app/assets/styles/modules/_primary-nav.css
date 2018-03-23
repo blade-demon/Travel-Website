@@ -2,7 +2,7 @@
 
     padding-top: 10px;
 
-    @mixin atLarge {
+    @mixin atMedium {
         padding-top: 0;
     }
 
@@ -48,7 +48,11 @@
          @mixin atMedium {
              padding: 12px 0;
              font-size: 1rem;
-             background: none;
+             background: transparent;
+
+             &.is-current-link {
+                color: #fabb69;
+             }
          }
      }
 }

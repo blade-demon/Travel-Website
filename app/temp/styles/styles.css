@@ -1110,6 +1110,11 @@ a {
 
   .site-header {
     background-color: rgba(47,85,114, 0.3);
+    position: fixed;
+  }
+
+  .site-header--dark {
+    background-color: rgba(23,51,72,0.85);
   }
 }
 
@@ -1128,6 +1133,7 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%) scale(0.8);
+  transition: transform .3s ease-out;
   transform-origin: 50% 0%;
   top: 0;
   background-color: #2f5572;
@@ -1139,6 +1145,10 @@ a {
   .site-header__logo {
     left: auto;
     transform: translateX(0);
+  }
+
+  .site-header--dark  .site-header__logo {
+    transform: scale(0.57);
   }
 }
 
@@ -1241,7 +1251,7 @@ a {
     padding-top: 10px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
 
   .primary-nav {
     padding-top: 0;
@@ -1300,7 +1310,11 @@ a {
   .primary-nav a {
     padding: 12px 0;
     font-size: 1rem;
-    background: none;
+    background: transparent;
+  }
+
+  .primary-nav a.is-current-link {
+    color: #fabb69;
   }
 }
 
