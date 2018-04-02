@@ -1,2 +1,6 @@
 node_modules
 .idea
+docs
+app/temp
+app/assets/images/sprites
+app/assets/styles/modules/_sprite.css
